@@ -27,7 +27,7 @@ public class FirstPost {
 	By _sortByBody=By.linkText("");
 	
 	//By _newPost=By.linkText("/posts/new");
-	By _newPost=By.cssSelector("a[href='/posts/new']");
+	By _newPost=By.linkText("New Post");
 	By _titleTextBox=By.id("post_title");
 //	By _titleTextBox=By.cssSelector("input[id='post_title']");
 	By _postDescriptionTextBox=By.cssSelector("input[id='post_description']");
