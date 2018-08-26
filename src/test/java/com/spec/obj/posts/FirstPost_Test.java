@@ -13,7 +13,7 @@ public class FirstPost_Test extends BrowserLaunch{
 		Thread.sleep(3000);
 		post.getURL();
 //		assertTrue(post.isNewPostLinkDisplay(), "New Post Link not Displayed");
-		post.clickOnNewPost();
+	//	post.clickOnNewPost();
 		Thread.sleep(3000);
 		post.getPage();
 //	//	assertTrue(post.isTitleFieldDisplay(), "Title field not displayed");
@@ -27,7 +27,7 @@ public class FirstPost_Test extends BrowserLaunch{
 	//	post.clickOnSaveButton();
 ////		assertTrue(post.isBackButtonDisplay(), "Back button not found");
 //		post.clickOnBackButton();
-	//	assertTrue(post.isPostCreated("NEW TEST"), "Post is not created ");
+		assertTrue(post.isPostCreated("NEW TE"), "Post is not created ");
 	//	post.getByXpath();
 	//	post.clickOnSortBytitle();
 		post.getURL();

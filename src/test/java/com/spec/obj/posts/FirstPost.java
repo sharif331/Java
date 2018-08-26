@@ -159,13 +159,13 @@ public class FirstPost {
 			
 			List<WebElement> column=row.get(i).findElements(By.tagName("td"));
 			
-//			for(int j=0;j<column.size();j++){
-//				if(column.get(i).getText().equals(title)){
-//					return true;
-//				}
+			for(int j=0;j<column.size();j++){
+			System.out.println(column.get(j).getText());	
+			}
 			
 		if(	column.get(0).getText().equals(title)){
 			System.out.println(column.get(0).getText());
+			
 			return true;
 		}
 				
