@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Test]">
+  <parameter name="test_suite_name" value="Regression Test"/>
+  <test name="Test All(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.spec.obj.posts.FirstPost_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="createPost"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.spec.obj.posts.FirstPost_Test -->
+    </classes>
+  </test> <!-- Test All(failed) -->
+</suite> <!-- Failed suite [Regression Test] -->
