@@ -23,8 +23,7 @@ public class FirstPost {
 	//Locator
 	
 	By _sortByTitle=By.linkText("Sort by title");//wrong
-	By _sortByDescription=By.linkText("/posts?sort_by=description&sort_order=asc");
-	By _sortByBody=By.linkText("");
+
 	
 	//By _newPost=By.linkText("/posts/new");
 	By _newPost=By.linkText("New Post");
