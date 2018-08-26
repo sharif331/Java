@@ -12,22 +12,24 @@ public class FirstPost_Test extends BrowserLaunch{
 	public void createPost() throws InterruptedException{
 		FirstPost post=new FirstPost(driver);
 		Thread.sleep(3000);
+		post.getURL();
 //		assertTrue(post.isNewPostLinkDisplay(), "New Post Link not Displayed");
-		post.clickOnNewPost();
+//		post.clickOnNewPost();
 //	//	assertTrue(post.isTitleFieldDisplay(), "Title field not displayed");
 //		post.waitForTitel();
-		post.enterTitle("NEWWW POSSSTTTT");
+//		post.enterTitle("MyFirstPost");
 //	//	assertTrue(post.isPostDescriptionFieldDisplay(), "Description field is not displyed");
 //		post.enterDescription("description");
 //	//	assertTrue(post.isBodyFieldDisplay(), "Body field is not displayed");
 //		post.enterBody("body");
 //	//	assertTrue(post.isSaveButtonDisplay(), "Save button not displayed");
-		post.clickOnSaveButton();
+//		post.clickOnSaveButton();
 ////		assertTrue(post.isBackButtonDisplay(), "Back button not found");
 //		post.clickOnBackButton();
-		assertTrue(post.isPostCreated("NEWWW POSSSTTTT"), "Post is not created ");
+		assertTrue(post.isPostCreated("MyFirstPost"), "Post is not created ");
 	//	post.getByXpath();
 		post.clickOnSortBytitle();
+		post.getURL();
 		Thread.sleep(3000);
 		//ok
 	}

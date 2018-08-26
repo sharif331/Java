@@ -38,7 +38,9 @@ public class FirstPost {
 	
 	
 	
-	
+	public void getURL(){
+		System.out.println(driver.getCurrentUrl());
+	}
 	
 	
 	
