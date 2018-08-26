@@ -13,7 +13,7 @@ public class FirstPost_Test extends BrowserLaunch{
 		Thread.sleep(3000);
 		post.getURL();
 //		assertTrue(post.isNewPostLinkDisplay(), "New Post Link not Displayed");
-//		post.clickOnNewPost();
+		post.clickOnNewPost();
 		Thread.sleep(3000);
 		post.getPage();
 //	//	assertTrue(post.isTitleFieldDisplay(), "Title field not displayed");
