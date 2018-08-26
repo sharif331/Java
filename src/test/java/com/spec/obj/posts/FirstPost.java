@@ -43,7 +43,9 @@ public class FirstPost {
 	
 	
 	
-	
+	public void getPage(){
+		System.out.println("PAGE::"+driver.getTitle());
+	}
 	
 	//  Verify the elements 
 	public boolean isNewPostLinkDisplay(){

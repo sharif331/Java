@@ -14,6 +14,8 @@ public class FirstPost_Test extends BrowserLaunch{
 		post.getURL();
 //		assertTrue(post.isNewPostLinkDisplay(), "New Post Link not Displayed");
 		post.clickOnNewPost();
+		Thread.sleep(3000);
+		post.getPage();
 //	//	assertTrue(post.isTitleFieldDisplay(), "Title field not displayed");
 		post.waitForTitel();
 		post.enterTitle("NEW TE");
@@ -22,7 +24,7 @@ public class FirstPost_Test extends BrowserLaunch{
 //	//	assertTrue(post.isBodyFieldDisplay(), "Body field is not displayed");
 		post.enterBody("From JLenkins");
 	//	assertTrue(post.isSaveButtonDisplay(), "Save button not displayed");
-		post.clickOnSaveButton();
+	//	post.clickOnSaveButton();
 ////		assertTrue(post.isBackButtonDisplay(), "Back button not found");
 //		post.clickOnBackButton();
 	//	assertTrue(post.isPostCreated("NEW TEST"), "Post is not created ");
