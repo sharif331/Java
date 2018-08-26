@@ -2,7 +2,6 @@ package com.spec.obj.posts;
 
 import org.testng.annotations.Test;
 
-import com.mapp.obj.common.BrowserLaunch;
 
 public class FirstPost_Test extends BrowserLaunch{
 

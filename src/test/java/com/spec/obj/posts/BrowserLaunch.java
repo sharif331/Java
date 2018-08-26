@@ -1,4 +1,4 @@
-package com.mapp.obj.common;
+package com.spec.obj.posts;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
