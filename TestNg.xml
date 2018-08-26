@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression Test" >
+	<parameters>
+		<parameter name="test_suite_name" value="Regression Test" />
+	</parameters>
+
+
+ 	<test name="Test All">
+		<parameters>
+			<parameter name="browser" value="chrome" />						
+		</parameters>
+		<classes>
+    <class name="com.spec.obj.posts.FirstPost_Test" />
+
+		</classes>
+	</test>
+
+	
+</suite>
+
+
+
