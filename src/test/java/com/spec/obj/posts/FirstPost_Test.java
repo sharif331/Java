@@ -17,11 +17,11 @@ public class FirstPost_Test extends BrowserLaunch{
 		post.clickOnNewPost();
 //	//	assertTrue(post.isTitleFieldDisplay(), "Title field not displayed");
 		post.waitForTitel();
-		post.enterTitle("NEW TEST");
+		post.enterTitle("NEW TE");
 //	//	assertTrue(post.isPostDescriptionFieldDisplay(), "Description field is not displyed");
-		post.enterDescription("D001");
+		post.enterDescription("001");
 //	//	assertTrue(post.isBodyFieldDisplay(), "Body field is not displayed");
-		post.enterBody("From Jenkins");
+		post.enterBody("From JLenkins");
 	//	assertTrue(post.isSaveButtonDisplay(), "Save button not displayed");
 		post.clickOnSaveButton();
 ////		assertTrue(post.isBackButtonDisplay(), "Back button not found");
