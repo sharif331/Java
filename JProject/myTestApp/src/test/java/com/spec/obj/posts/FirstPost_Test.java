@@ -29,5 +29,6 @@ public class FirstPost_Test extends BrowserLaunch{
 	//	post.getByXpath();
 		post.clickOnSortBytitle();
 		Thread.sleep(3000);
+		//ok
 	}
 }

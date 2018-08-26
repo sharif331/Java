@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [com.mapp.test.user.Login_Test]">
+<suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)">
     <classes>
+      <class name="com.spec.obj.posts.FirstPost_Test">
+        <methods>
+          <include name="createPost"/>
+        </methods>
+      </class> <!-- com.spec.obj.posts.FirstPost_Test -->
       <class name="com.mapp.test.user.Login_Test">
         <methods>
           <include name="setUp"/>
@@ -11,4 +16,4 @@
       </class> <!-- com.mapp.test.user.Login_Test -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [com.mapp.test.user.Login_Test] -->
+</suite> <!-- Failed suite [Command line suite] -->
