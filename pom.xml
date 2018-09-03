@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>Test-App</groupId>
-  <artifactId>App1</artifactId>
+  <groupId>My-App</groupId>
+  <artifactId>myapp-test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>App1</name>
+  <name>myTestApp</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -15,12 +15,51 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+  
+      <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+     <dependency>
+           <groupId>org.seleniumhq.selenium</groupId>
+           <artifactId>selenium-java</artifactId>
+           <version>3.11.0</version>
+     </dependency>
+     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+     <dependency>
+          <groupId>org.testng</groupId>
+          <artifactId>testng</artifactId>
+          <version>6.10</version>
+          <scope>test</scope>
+     </dependency>
+     
+
   </dependencies>
+  	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<!-- or whatever version you use -->
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.0</version>
+				<inherited> true</inherited>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>TestNg.xml</suiteXmlFile>
+						>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
 
 </project>

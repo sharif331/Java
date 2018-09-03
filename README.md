@@ -1,2 +1,0 @@
-# sharif-own
-For leaning 
